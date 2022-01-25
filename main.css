@@ -99,7 +99,7 @@ h1 {
 
 #emailText {
     color: transparent;
-    text-shadow: 0 0 6px currentcolor;
+    text-shadow: 0 0 6px rgb(85, 85, 85);
 }
 
 @media only screen and (max-width: 600px) {
