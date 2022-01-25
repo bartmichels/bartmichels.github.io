@@ -39,7 +39,20 @@
                         alt="profile for Bart Michels at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields"
                         title="profile for Bart Michels at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields"></a>
                 <h1>Contact</h1>
-                <p>Email: firstname.lastname.math@gmail.com</p>
+                <p id="email">Email: <span id="emailText">clickheretoshowmyemail@domain.com</span></p>
+                <script type="application/javascript">
+                    var emailVisible = false;
+                    document.getElementById("email").addEventListener("click", showEmail);
+                    document.getElementById("email").addEventListener("mouseover", showEmail);
+                    function showEmail() {
+                        if (emailVisible) return;
+                        emailVisible = true;
+                        var emailText = document.getElementById("emailText");
+                        emailText.innerText = atob("YmFydC5taWNoZWxzQGdtYWlsLmNvbQ==");
+                        emailText.style.textShadow = "";
+                        emailText.style.color = "";
+                    }
+                </script>
                 <p><address>
                         Universität Bonn <br>
                         Mathematisches Institut <br>
