@@ -97,7 +97,10 @@ h1 {
     margin-left: 10px;
 }
 
-.caption {}
+#emailText {
+    color: transparent;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+}
 
 @media only screen and (max-width: 600px) {
     .container {
